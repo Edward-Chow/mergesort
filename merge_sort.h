@@ -9,7 +9,9 @@ class MergeSort {
 		MergeSort(const std::initializer_list<V> &list);
 		void Merge(int start, int mid, int end);
 		void MergeSortFunc(int start, int end);
-		void DisplayElements();
+		void DisplayElements() const;
+		int GetNumOfElements() const;
+		std::vector<V> GetElementsVec() const;
 	private:
 		int num_of_elements_;
 		std::vector<V> elements_;
